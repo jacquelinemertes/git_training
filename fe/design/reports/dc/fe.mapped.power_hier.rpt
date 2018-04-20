@@ -1,0 +1,90 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : fe
+Version: L-2016.03-SP3
+Date   : Mon Oct  3 18:12:27 2016
+****************************************
+
+
+Library(s) Used:
+
+    sc12mc_cmos28hpp_base_rvt_c34_ssa_nominal_max_0p765v_0c (File: /net/tdk/arm/gf/cmos28hpp/logic_ip/sc12mc_base_rvt_c34/r9p0/db/sc12mc_cmos28hpp_base_rvt_c34_ssa_nominal_max_0p765v_0c.db)
+    sc12mc_cmos28hpp_base_rvt_c30_ssa_nominal_max_0p765v_0c (File: /net/tdk/arm/gf/cmos28hpp/logic_ip/sc12mc_base_rvt_c30/r9p0/db-ccs-tn/sc12mc_cmos28hpp_base_rvt_c30_ssa_nominal_max_0p765v_0c.db_ccs_tn)
+    sc12mc_cmos28hpp_base_hvt_c30_ssa_nominal_max_0p765v_0c (File: /net/tdk/arm/gf/cmos28hpp/logic_ip/sc12mc_base_hvt_c30/r9p0/db/sc12mc_cmos28hpp_base_hvt_c30_ssa_nominal_max_0p765v_0c.db)
+    sc12mc_cmos28hpp_base_rvt_c38_ssa_nominal_max_0p765v_0c (File: /net/tdk/arm/gf/cmos28hpp/logic_ip/sc12mc_base_rvt_c38/r9p0/db/sc12mc_cmos28hpp_base_rvt_c38_ssa_nominal_max_0p765v_0c.db)
+    sc12mc_cmos28hpp_base_lvt_c34_ssa_nominal_max_0p765v_0c (File: /net/tdk/arm/gf/cmos28hpp/logic_ip/sc12mc_base_lvt_c34/r9p0/db/sc12mc_cmos28hpp_base_lvt_c34_ssa_nominal_max_0p765v_0c.db)
+    sc12mc_cmos28hpp_base_lvt_c30_ssa_nominal_max_0p765v_0c (File: /net/tdk/arm/gf/cmos28hpp/logic_ip/sc12mc_base_lvt_c30/r9p0/db/sc12mc_cmos28hpp_base_lvt_c30_ssa_nominal_max_0p765v_0c.db)
+    sc12mc_cmos28hpp_base_hvt_c34_ssa_nominal_max_0p765v_0c (File: /net/tdk/arm/gf/cmos28hpp/logic_ip/sc12mc_base_hvt_c34/r9p0/db/sc12mc_cmos28hpp_base_hvt_c34_ssa_nominal_max_0p765v_0c.db)
+    sc12mc_cmos28hpp_base_hvt_c38_ssa_nominal_max_0p765v_0c (File: /net/tdk/arm/gf/cmos28hpp/logic_ip/sc12mc_base_hvt_c38/r9p0/db/sc12mc_cmos28hpp_base_hvt_c38_ssa_nominal_max_0p765v_0c.db)
+
+
+Operating Conditions: ssa_nominal_max_0p765v_0c   Library: sc12mc_cmos28hpp_base_lvt_c30_ssa_nominal_max_0p765v_0c
+Wire Load Model Mode: Inactive.
+
+
+Global Operating Voltage = 0.765
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1uW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+fe                                      465.632   35.891  372.422  501.895 100.0
+  uu_fft512_hi_lo_uu_twm512 (fe_twm512_hi_lo_NBW_IN9_NBI_IN5_INV0_RND_INF0_0)    1.521    0.102   59.619    1.683   0.3
+    mult_0__uu_rnd_sat_q (fe_rnd_sat_00000013_00000008_9_5_0_1) 5.59e-05 1.32e-05 3.57e-04 6.95e-05   0.0
+    mult_0__uu_rnd_sat_i (fe_rnd_sat_00000013_00000008_9_5_0_0) 5.38e-05 1.22e-05 2.40e-04 6.62e-05   0.0
+  uu_fft512_hi_lo_uu_fft64 (fe_fft_64_NBW_IN9_NBI_IN5_NBW_BF169_NBI_BF169_NBW_BF411_NBI_BF47_NBW_OUT11_NBI_OUT11_BF4_R_INF0_INV0_0)    3.373    0.104   37.495    3.514   0.7
+    twmult_63__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX63_INV0_0) 2.51e-04 3.56e-04    0.260 8.67e-04   0.0
+    twmult_62__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX62_INV0_0) 1.78e-04 3.03e-04 7.93e-02 5.60e-04   0.0
+    twmult_61__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX61_INV0_0) 1.87e-04 3.06e-04 6.84e-02 5.62e-04   0.0
+    twmult_59__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX59_INV0_0) 2.00e-04 3.12e-04    0.402 9.14e-04   0.0
+    twmult_58__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX58_INV0_0) 1.64e-04 2.90e-04    0.101 5.55e-04   0.0
+    twmult_57__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX57_INV0_0) 2.23e-04 3.83e-04    0.290 8.96e-04   0.0
+    twmult_55__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX55_INV0_0) 1.79e-04 2.98e-04    0.108 5.86e-04   0.0
+    twmult_54__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX54_INV0_0) 2.59e-04 4.09e-04    0.205 8.73e-04   0.0
+    twmult_53__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX53_INV0_0) 1.87e-04 3.09e-04    0.259 7.55e-04   0.0
+    twmult_51__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX51_INV0_0) 2.35e-04 3.88e-04    0.107 7.29e-04   0.0
+    twmult_50__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX50_INV0_0) 2.28e-04 4.08e-04 9.34e-02 7.29e-04   0.0
+    twmult_49__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX49_INV0_0) 2.13e-04 3.62e-04 8.70e-02 6.62e-04   0.0
+    twmult_47__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX47_INV0_0) 2.74e-04 3.96e-04    0.274 9.44e-04   0.0
+    twmult_46__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX46_INV0_0) 2.67e-04 4.15e-04    0.428 1.11e-03   0.0
+    twmult_45__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX45_INV0_0) 2.26e-04 3.71e-04 9.36e-02 6.90e-04   0.0
+    twmult_43__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX43_INV0_0) 1.80e-04 2.93e-04    0.115 5.88e-04   0.0
+    twmult_42__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX42_INV0_0) 2.37e-04 4.04e-04    0.110 7.51e-04   0.0
+    twmult_41__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX41_INV0_0) 1.83e-04 3.19e-04    0.393 8.95e-04   0.0
+    twmult_39__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX39_INV0_0) 1.96e-04 3.14e-04    0.262 7.73e-04   0.0
+    twmult_38__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX38_INV0_0) 1.97e-04 3.06e-04 9.72e-02 5.99e-04   0.0
+    twmult_37__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX37_INV0_0) 2.43e-04 4.10e-04    0.103 7.56e-04   0.0
+    twmult_35__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX35_INV0_0) 2.12e-04 3.58e-04 8.66e-02 6.56e-04   0.0
+    twmult_34__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX34_INV0_0) 1.85e-04 3.12e-04 9.65e-02 5.94e-04   0.0
+    twmult_31__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX31_INV0_0) 2.67e-04 4.01e-04    0.298 9.66e-04   0.0
+    twmult_30__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX30_INV0_0) 2.21e-04 3.61e-04 9.92e-02 6.82e-04   0.0
+    twmult_29__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX29_INV0_0) 1.88e-04 3.17e-04 8.49e-02 5.90e-04   0.0
+    twmult_27__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX27_INV0_0) 2.12e-04 3.20e-04 7.63e-02 6.09e-04   0.0
+    twmult_26__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX26_INV0_0) 2.15e-04 3.52e-04 9.84e-02 6.66e-04   0.0
+    twmult_25__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX25_INV0_0) 2.50e-04 4.18e-04    0.277 9.46e-04   0.0
+    twmult_23__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX23_INV0_0) 1.98e-04 3.08e-04 9.64e-02 6.02e-04   0.0
+    twmult_22__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX22_INV0_0) 2.31e-04 3.70e-04 8.73e-02 6.88e-04   0.0
+    twmult_21__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX21_INV0_0) 2.40e-04 4.01e-04    0.269 9.11e-04   0.0
+    twmult_19__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX19_INV0_0) 2.85e-04 4.31e-04    0.294 1.01e-03   0.0
+    twmult_18__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX18_INV0_0) 2.21e-04 3.61e-04 9.69e-02 6.79e-04   0.0
+    twmult_17__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX17_INV0_0) 1.86e-04 3.03e-04    0.113 6.02e-04   0.0
+    twmult_15__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX15_INV0_0) 2.55e-04 3.69e-04 9.50e-02 7.19e-04   0.0
+    twmult_13__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX13_INV0_0) 2.45e-04 3.69e-04 9.32e-02 7.07e-04   0.0
+    twmult_11__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX11_INV0_0) 2.41e-04 3.56e-04    0.292 8.89e-04   0.0
+    twmult_9__uu_twm64 (fe_twm64_NBW_IN9_NBI_IN9_IDX9_INV0_0) 2.54e-04 3.76e-04    0.102 7.33e-04   0.0
+    bf16_inst_3__uu_bf16 (fe_bf16_NBW_IN9_NBI_IN5_NBW_BFI11_NBI_BFI7_NBW_OUT9_NBI_OUT9_INV0_RND_INF0_2) 1.31e-02 1.66e-02    7.416 3.71e-02   0.0
+    bf16_inst_2__uu_bf16 (fe_bf16_NBW_IN9_NBI_IN5_NBW_BFI11_NBI_BFI7_NBW_OUT9_NBI_OUT9_INV0_RND_INF0_3) 1.27e-02 1.68e-02    7.470 3.69e-02   0.0
+    bf16_inst_1__uu_bf16 (fe_bf16_NBW_IN9_NBI_IN5_NBW_BFI11_NBI_BFI7_NBW_OUT9_NBI_OUT9_INV0_RND_INF0_1) 1.35e-02 1.68e-02    6.842 3.71e-02   0.0
+    bf16_inst_0__uu_bf16 (fe_bf16_NBW_IN9_NBI_IN5_NBW_BFI11_NBI_BFI7_NBW_OUT9_NBI_OUT9_INV0_RND_INF0_0) 1.23e-02 1.68e-02    6.618 3.57e-02   0.0
+  uu_max_tree (fe_max_tree_8_00000040_00000006_48_0) 8.46e-03 8.73e-02    1.134 9.69e-02   0.0
+1

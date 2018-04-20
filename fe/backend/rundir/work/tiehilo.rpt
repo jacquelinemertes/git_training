@@ -1,0 +1,71 @@
+###############################################
+#                                             #
+#  Silicon Perspective, A Cadence Company     #
+#  Innovus ECO/IPO Delta file                 #
+#                                             #
+###############################################
+# Created on Mon Apr  9 18:37:29 2018
+
+
+FORMATVERSION 2
+
+START_HECO
+CURRENT_INST uu_fft512_hi_lo_uu_twm512
+CREATE_INST TIE_HI_LO_LTIELO TIELO_X1M_A12TH_C38
+CREATE_NET TIE_HI_LO_LTIELO_NET
+
+CONNECT_NET TIE_HI_LO_LTIELO_NET TIE_HI_LO_LTIELO/Y
+DISCONNECT U21808/B
+CONNECT_NET TIE_HI_LO_LTIELO_NET U21808/B
+DISCONNECT U46338/B
+CONNECT_NET TIE_HI_LO_LTIELO_NET U46338/B
+CURRENT_INST uu_fft512_hi_lo_clk_gate_r_data_reg_0_
+CREATE_INST TIE_HI_LO_LTIELO TIELO_X1M_A12TH_C38
+CREATE_NET TIE_HI_LO_LTIELO_NET
+
+CONNECT_NET TIE_HI_LO_LTIELO_NET TIE_HI_LO_LTIELO/Y
+DISCONNECT latch/SE
+CONNECT_NET TIE_HI_LO_LTIELO_NET latch/SE
+CURRENT_INST uu_fft512_hi_lo_uu_twm512
+CREATE_INST TIE_HI_LO_LTIELO_1 TIELO_X1M_A12TH_C38
+CREATE_NET TIE_HI_LO_LTIELO_1_NET
+
+CONNECT_NET TIE_HI_LO_LTIELO_1_NET TIE_HI_LO_LTIELO_1/Y
+DISCONNECT U4015/A
+CONNECT_NET TIE_HI_LO_LTIELO_1_NET U4015/A
+DISCONNECT U4004/B
+CONNECT_NET TIE_HI_LO_LTIELO_1_NET U4004/B
+DISCONNECT U11635/B
+CONNECT_NET TIE_HI_LO_LTIELO_1_NET U11635/B
+END_HECO
+START_HECO
+CURRENT_INST uu_max_tree
+CREATE_INST TIE_HI_LO_LTIEHI TIEHI_X1M_A12TH_C38
+CREATE_NET TIE_HI_LO_LTIEHI_NET
+
+CONNECT_NET TIE_HI_LO_LTIEHI_NET TIE_HI_LO_LTIEHI/Y
+DISCONNECT levels_3__nodes_7__position_reg_3_/D
+CONNECT_NET TIE_HI_LO_LTIEHI_NET levels_3__nodes_7__position_reg_3_/D
+DISCONNECT levels_3__nodes_1__position_reg_3_/D
+CONNECT_NET TIE_HI_LO_LTIEHI_NET levels_3__nodes_1__position_reg_3_/D
+DISCONNECT levels_3__nodes_7__position_reg_4_/D
+CONNECT_NET TIE_HI_LO_LTIEHI_NET levels_3__nodes_7__position_reg_4_/D
+DISCONNECT levels_3__nodes_5__position_reg_5_/D
+CONNECT_NET TIE_HI_LO_LTIEHI_NET levels_3__nodes_5__position_reg_5_/D
+DISCONNECT levels_3__nodes_5__position_reg_3_/D
+CONNECT_NET TIE_HI_LO_LTIEHI_NET levels_3__nodes_5__position_reg_3_/D
+DISCONNECT levels_3__nodes_3__position_reg_3_/D
+CONNECT_NET TIE_HI_LO_LTIEHI_NET levels_3__nodes_3__position_reg_3_/D
+DISCONNECT levels_3__nodes_2__position_reg_4_/D
+CONNECT_NET TIE_HI_LO_LTIEHI_NET levels_3__nodes_2__position_reg_4_/D
+DISCONNECT levels_3__nodes_7__position_reg_5_/D
+CONNECT_NET TIE_HI_LO_LTIEHI_NET levels_3__nodes_7__position_reg_5_/D
+DISCONNECT levels_3__nodes_3__position_reg_4_/D
+CONNECT_NET TIE_HI_LO_LTIEHI_NET levels_3__nodes_3__position_reg_4_/D
+DISCONNECT levels_3__nodes_6__position_reg_4_/D
+CONNECT_NET TIE_HI_LO_LTIEHI_NET levels_3__nodes_6__position_reg_4_/D
+DISCONNECT levels_3__nodes_4__position_reg_5_/D
+CONNECT_NET TIE_HI_LO_LTIEHI_NET levels_3__nodes_4__position_reg_5_/D
+DISCONNECT levels_3__nodes_6__position_reg_5_/D
+CONNECT_NET TIE_HI_LO_LTIEHI_NET levels_3__nodes_6__position_reg_5_/D
+END_HECO

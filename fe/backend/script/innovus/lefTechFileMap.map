@@ -1,0 +1,32 @@
+extraction_setup \
+    -technology_layer_map \
+       NW none \
+       PWELL_MARKER none \
+       DV none \
+       RVT none \
+       HVT none \
+       LVT none \
+       PC PC \
+       M1 M1 \
+       V1 V1 \
+       M2 M2 \
+       V2 V2 \
+       M3 M3 \
+       V3 V3 \
+       M4 M4 \
+       V4 V4 \
+       M5 M5 \
+       V5 V5 \
+       M6 M6 \
+       W0 W0 \
+       B1 B1 \
+       W1 W1 \
+       B2 B2 \
+       YZ YZ  \
+       IA IA \
+       XA XA \
+       IB IB \
+       VV VV \
+       LB LB \
+       OVERLAP none
+

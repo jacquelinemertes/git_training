@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : area
+Design : fe
+Version: L-2016.03-SP3
+Date   : Mon Oct  3 18:07:23 2016
+****************************************
+
+Library(s) Used:
+
+    sc12mc_cmos28hpp_base_rvt_c34_ssa_nominal_max_0p765v_0c (File: /net/tdk/arm/gf/cmos28hpp/logic_ip/sc12mc_base_rvt_c34/r9p0/db/sc12mc_cmos28hpp_base_rvt_c34_ssa_nominal_max_0p765v_0c.db)
+    sc12mc_cmos28hpp_base_rvt_c30_ssa_nominal_max_0p765v_0c (File: /net/tdk/arm/gf/cmos28hpp/logic_ip/sc12mc_base_rvt_c30/r9p0/db-ccs-tn/sc12mc_cmos28hpp_base_rvt_c30_ssa_nominal_max_0p765v_0c.db_ccs_tn)
+    sc12mc_cmos28hpp_base_hvt_c30_ssa_nominal_max_0p765v_0c (File: /net/tdk/arm/gf/cmos28hpp/logic_ip/sc12mc_base_hvt_c30/r9p0/db/sc12mc_cmos28hpp_base_hvt_c30_ssa_nominal_max_0p765v_0c.db)
+    sc12mc_cmos28hpp_base_rvt_c38_ssa_nominal_max_0p765v_0c (File: /net/tdk/arm/gf/cmos28hpp/logic_ip/sc12mc_base_rvt_c38/r9p0/db/sc12mc_cmos28hpp_base_rvt_c38_ssa_nominal_max_0p765v_0c.db)
+    sc12mc_cmos28hpp_base_lvt_c34_ssa_nominal_max_0p765v_0c (File: /net/tdk/arm/gf/cmos28hpp/logic_ip/sc12mc_base_lvt_c34/r9p0/db/sc12mc_cmos28hpp_base_lvt_c34_ssa_nominal_max_0p765v_0c.db)
+    sc12mc_cmos28hpp_base_lvt_c30_ssa_nominal_max_0p765v_0c (File: /net/tdk/arm/gf/cmos28hpp/logic_ip/sc12mc_base_lvt_c30/r9p0/db/sc12mc_cmos28hpp_base_lvt_c30_ssa_nominal_max_0p765v_0c.db)
+    sc12mc_cmos28hpp_base_hvt_c34_ssa_nominal_max_0p765v_0c (File: /net/tdk/arm/gf/cmos28hpp/logic_ip/sc12mc_base_hvt_c34/r9p0/db/sc12mc_cmos28hpp_base_hvt_c34_ssa_nominal_max_0p765v_0c.db)
+    sc12mc_cmos28hpp_base_hvt_c38_ssa_nominal_max_0p765v_0c (File: /net/tdk/arm/gf/cmos28hpp/logic_ip/sc12mc_base_hvt_c38/r9p0/db/sc12mc_cmos28hpp_base_hvt_c38_ssa_nominal_max_0p765v_0c.db)
+
+Number of ports:                        14479
+Number of nets:                        558644
+Number of cells:                       457469
+Number of combinational cells:         415528
+Number of sequential cells:             40895
+Number of macros/black boxes:               0
+Number of buf/inv:                      47859
+Number of references:                    2310
+
+Combinational area:             498950.396171
+Buf/Inv area:                    22773.347767
+Noncombinational area:          103582.754068
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                602533.150239
+Total area:                 undefined
+
+Core Area:                   1106809
+Aspect Ratio:                 1.0007
+Utilization Ratio:            0.5444
+
+
+The above information was reported from the logical library. The following are from the physical library:
+
+  Total moveable cell area: 602533.2
+  Total fixed cell area: 0.0
+  Total physical cell area: 602533.2
+ Core area: 0.000, 0.000, 1051.700, 1052.400
+1

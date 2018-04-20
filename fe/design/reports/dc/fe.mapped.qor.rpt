@@ -1,0 +1,126 @@
+ 
+****************************************
+Report : qor
+Design : fe
+Version: L-2016.03-SP3
+Date   : Mon Oct  3 18:07:10 2016
+****************************************
+
+
+  Timing Path Group 'REG2REG'
+  -----------------------------------
+  Levels of Logic:              26.00
+  Critical Path Length:          1.85
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'REGIN'
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:          0.05
+  Critical Path Slack:           0.22
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'REGOUT'
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:          0.19
+  Critical Path Slack:           0.26
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:               6.00
+  Critical Path Length:          1.40
+  Critical Path Slack:           0.35
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:       1046
+  Hierarchical Port Count:      13253
+  Leaf Cell Count:             456342
+  Buf/Inv Cell Count:           47859
+  Buf Cell Count:                1013
+  Inv Cell Count:               46846
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:    415528
+  Sequential Cell Count:        40814
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:   498950.396171
+  Noncombinational Area:
+                        103582.754068
+  Buf/Inv Area:          22773.347767
+  Total Buffer Area:           724.15
+  Total Inverter Area:       22049.20
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  Net XLength        :     3100143.00
+  Net YLength        :     3373419.00
+  -----------------------------------
+  Cell Area:            602533.150239
+  Design Area:          602533.150239
+  Net Length        :      6473562.00
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:        545450
+  Nets With Violations:           144
+  Max Trans Violations:           143
+  Max Cap Violations:               1
+  -----------------------------------
+
+
+  Hostname: tanatau
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.00
+  Logic Optimization:                  0.00
+  Mapping Optimization:             4424.28
+  -----------------------------------------
+  Overall Compile Time:             4779.30
+  Overall Compile Wall Clock Time:  1632.80
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

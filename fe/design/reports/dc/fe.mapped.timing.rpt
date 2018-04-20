@@ -1,0 +1,240 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : fe
+Version: L-2016.03-SP3
+Date   : Mon Oct  3 18:07:17 2016
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ssa_nominal_max_0p765v_0c   Library: sc12mc_cmos28hpp_base_lvt_c30_ssa_nominal_max_0p765v_0c
+Wire Load Model Mode: Inactive.
+
+  Startpoint: uu_fft512_hi_lo_gen_serial_0__uu_fft_serial_hi_lo_uu_bf8_serial_uu_bf2ii_o_valid_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: uu_fft512_hi_lo_uu_twm512/o_data_reg_32__0__3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: REG2REG
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  uu_fft512_hi_lo_gen_serial_0__uu_fft_serial_hi_lo_uu_bf8_serial_uu_bf2ii_o_valid_reg/CK (DFFRPQ_X4M_A12TL_C30)     0.10     0.00 #     0.00 r
+  uu_fft512_hi_lo_gen_serial_0__uu_fft_serial_hi_lo_uu_bf8_serial_uu_bf2ii_o_valid_reg/Q (DFFRPQ_X4M_A12TL_C30)     0.02     0.09     0.09 r
+  uu_fft512_hi_lo_gen_serial_0__uu_fft_serial_hi_lo_aux_out_valid (net)     3     0.00     0.09 r
+  U14790/Y (INV_X6M_A12TL_C30)                            0.04      0.03 *     0.12 f
+  n397642 (net)                                28                   0.00       0.12 f
+  uu_fft512_hi_lo_uu_twm512/hi_lo_flag (fe_twm512_hi_lo_NBW_IN9_NBI_IN5_INV0_RND_INF0_0)     0.00     0.12 f
+  uu_fft512_hi_lo_uu_twm512/hi_lo_flag (net)                        0.00       0.12 f
+  uu_fft512_hi_lo_uu_twm512/U47273/Y (INV_X0P5B_A12TH_C30)     0.04     0.09 *     0.21 r
+  uu_fft512_hi_lo_uu_twm512/n77665 (net)        1                   0.00       0.21 r
+  uu_fft512_hi_lo_uu_twm512/U12252/Y (NAND2B_X2M_A12TR_C30)     0.09     0.08 *     0.29 r
+  uu_fft512_hi_lo_uu_twm512/n31112 (net)        5                   0.00       0.29 r
+  uu_fft512_hi_lo_uu_twm512/U567/Y (INV_X2M_A12TL_C34)     0.14     0.12 *     0.42 f
+  uu_fft512_hi_lo_uu_twm512/n73596 (net)       31                   0.00       0.42 f
+  uu_fft512_hi_lo_uu_twm512/U47183/Y (NOR2_X1M_A12TR_C30)     0.16     0.14 *     0.56 r
+  uu_fft512_hi_lo_uu_twm512/n74608 (net)        6                   0.00       0.56 r
+  uu_fft512_hi_lo_uu_twm512/U17268/Y (INV_X7P5M_A12TR_C38)     0.07     0.08 *     0.64 f
+  uu_fft512_hi_lo_uu_twm512/n74610 (net)       31                   0.00       0.64 f
+  uu_fft512_hi_lo_uu_twm512/U43221/Y (XNOR2_X0P5M_A12TH_C30)     0.11     0.15 *     0.79 f
+  uu_fft512_hi_lo_uu_twm512/n41865 (net)        2                   0.00       0.79 f
+  uu_fft512_hi_lo_uu_twm512/U36899/Y (OAI22_X1M_A12TH_C30)     0.11     0.13 *     0.92 r
+  uu_fft512_hi_lo_uu_twm512/n41887 (net)        1                   0.00       0.92 r
+  uu_fft512_hi_lo_uu_twm512/U36922/S (ADDF_X1M_A12TH_C30)     0.04     0.16 *     1.08 f
+  uu_fft512_hi_lo_uu_twm512/n42043 (net)        1                   0.00       1.08 f
+  uu_fft512_hi_lo_uu_twm512/U37036/S (ADDF_X1M_A12TH_C30)     0.05     0.15 *     1.23 f
+  uu_fft512_hi_lo_uu_twm512/n42064 (net)        1                   0.00       1.23 f
+  uu_fft512_hi_lo_uu_twm512/U37046/S (ADDF_X1M_A12TR_C34)     0.02     0.08 *     1.31 f
+  uu_fft512_hi_lo_uu_twm512/n42057 (net)        2                   0.00       1.31 f
+  uu_fft512_hi_lo_uu_twm512/U26682/Y (OR2_X1M_A12TH_C34)     0.03     0.07 *     1.38 f
+  uu_fft512_hi_lo_uu_twm512/n75192 (net)        2                   0.00       1.38 f
+  uu_fft512_hi_lo_uu_twm512/U37044/Y (AOI21_X1M_A12TR_C30)     0.03     0.03 *     1.42 r
+  uu_fft512_hi_lo_uu_twm512/n42206 (net)        2                   0.00       1.42 r
+  uu_fft512_hi_lo_uu_twm512/U24349/Y (OAI21_X1M_A12TR_C30)     0.03     0.03 *     1.45 f
+  uu_fft512_hi_lo_uu_twm512/n42190 (net)        2                   0.00       1.45 f
+  uu_fft512_hi_lo_uu_twm512/U37053/Y (AOI21_X1M_A12TR_C30)     0.08     0.06 *     1.51 r
+  uu_fft512_hi_lo_uu_twm512/n42372 (net)        8                   0.00       1.51 r
+  uu_fft512_hi_lo_uu_twm512/U19306/Y (OAI21_X0P7M_A12TR_C30)     0.04     0.05 *     1.56 f
+  uu_fft512_hi_lo_uu_twm512/n42183 (net)        1                   0.00       1.56 f
+  uu_fft512_hi_lo_uu_twm512/U18684/Y (XNOR2_X0P7M_A12TR_C38)     0.04     0.04 *     1.60 f
+  uu_fft512_hi_lo_uu_twm512/n69150 (net)        3                   0.00       1.60 f
+  uu_fft512_hi_lo_uu_twm512/U22741/Y (AND2_X0P7B_A12TL_C34)     0.02     0.04 *     1.64 f
+  uu_fft512_hi_lo_uu_twm512/n76813 (net)        1                   0.00       1.64 f
+  uu_fft512_hi_lo_uu_twm512/U18054/Y (NAND2B_X2M_A12TL_C30)     0.01     0.01 *     1.66 r
+  uu_fft512_hi_lo_uu_twm512/n69131 (net)        3                   0.00       1.66 r
+  uu_fft512_hi_lo_uu_twm512/U12377/Y (NAND2B_X1M_A12TL_C30)     0.01     0.02 *     1.68 r
+  uu_fft512_hi_lo_uu_twm512/n42343 (net)        1                   0.00       1.68 r
+  uu_fft512_hi_lo_uu_twm512/U16924/Y (AND2_X2M_A12TR_C30)     0.02     0.03 *     1.71 r
+  uu_fft512_hi_lo_uu_twm512/n42385 (net)        4                   0.00       1.71 r
+  uu_fft512_hi_lo_uu_twm512/U12349/Y (XOR2_X0P5M_A12TL_C34)     0.03     0.03 *     1.75 r
+  uu_fft512_hi_lo_uu_twm512/n42356 (net)        1                   0.00       1.75 r
+  uu_fft512_hi_lo_uu_twm512/U37270/Y (NAND2_X1A_A12TL_C34)     0.02     0.02 *     1.77 f
+  uu_fft512_hi_lo_uu_twm512/n42383 (net)        1                   0.00       1.77 f
+  uu_fft512_hi_lo_uu_twm512/U38261/Y (OR2_X3M_A12TL_C30)     0.01     0.03 *     1.79 f
+  uu_fft512_hi_lo_uu_twm512/n42387 (net)        2                   0.00       1.79 f
+  uu_fft512_hi_lo_uu_twm512/U37287/Y (INV_X3M_A12TR_C30)     0.01     0.01 *     1.81 r
+  uu_fft512_hi_lo_uu_twm512/n69164 (net)        9                   0.00       1.81 r
+  uu_fft512_hi_lo_uu_twm512/U60715/Y (AO1B2_X0P7M_A12TR_C38)     0.02     0.05 *     1.85 r
+  uu_fft512_hi_lo_uu_twm512/result[576] (net)     1                 0.00       1.85 r
+  uu_fft512_hi_lo_uu_twm512/o_data_reg_32__0__3_/D (DFFQ_X2M_A12TR_C34)     0.02     0.00 *     1.85 r
+  data arrival time                                                            1.85
+
+  clock clk (rise edge)                                             2.00       2.00
+  clock network delay (ideal)                                       0.00       2.00
+  clock uncertainty                                                -0.15       1.85
+  uu_fft512_hi_lo_uu_twm512/o_data_reg_32__0__3_/CK (DFFQ_X2M_A12TR_C34)     0.00     1.85 r
+  library setup time                                                0.00       1.85
+  data required time                                                           1.85
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           1.85
+  data arrival time                                                           -1.85
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.00
+
+
+  Startpoint: i_data_q[134]
+              (input port clocked by clk)
+  Endpoint: reg_data_q_reg_14__8_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: REGIN
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  input external delay                                              1.40       1.40 f
+  i_data_q[134] (in)                                      0.00      0.00       1.40 f
+  i_data_q[134] (net)                           1                   0.00       1.40 f
+  reg_data_q_reg_14__8_/D (DFFQA_X1M_A12TH_C34)           0.10      0.05 *     1.45 f
+  data arrival time                                                            1.45
+
+  clock clk (rise edge)                                             2.00       2.00
+  clock network delay (ideal)                                       0.00       2.00
+  clock uncertainty                                                -0.15       1.85
+  reg_data_q_reg_14__8_/CK (DFFQA_X1M_A12TH_C34)                    0.00       1.85 r
+  library setup time                                               -0.18       1.67
+  data required time                                                           1.67
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           1.67
+  data arrival time                                                           -1.45
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.22
+
+
+  Startpoint: o_data_fo_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o_data_fo[1]
+            (output port clocked by clk)
+  Path Group: REGOUT
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  o_data_fo_reg_1_/CK (DFFRPQA_X1M_A12TR_C38)             0.10      0.00       0.00 r
+  o_data_fo_reg_1_/Q (DFFRPQA_X1M_A12TR_C38)              0.13      0.18       0.18 r
+  o_data_fo[1] (net)                            1                   0.00       0.18 r
+  o_data_fo[1] (out)                                      0.13      0.01 *     0.19 r
+  data arrival time                                                            0.19
+
+  clock clk (rise edge)                                             2.00       2.00
+  clock network delay (ideal)                                       0.00       2.00
+  clock uncertainty                                                -0.15       1.85
+  output external delay                                            -1.40       0.45
+  data required time                                                           0.45
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           0.45
+  data arrival time                                                           -0.19
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.26
+
+
+  Startpoint: uu_fft512_hi_lo_gen_serial_2__uu_fft_serial_hi_lo_uu_bf8_serial_uu_bf2_fifoi_nsamples_count_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: uu_fft512_hi_lo_gen_serial_2__uu_fft_serial_hi_lo_clk_gate_uu_bf8_serial_bf2_data_reg_0__0_/latch
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  uu_fft512_hi_lo_gen_serial_2__uu_fft_serial_hi_lo_uu_bf8_serial_uu_bf2_fifoi_nsamples_count_reg_1_/CK (DFFRPQA_X1M_A12TH_C30)     0.10     0.00     0.00 r
+  uu_fft512_hi_lo_gen_serial_2__uu_fft_serial_hi_lo_uu_bf8_serial_uu_bf2_fifoi_nsamples_count_reg_1_/Q (DFFRPQA_X1M_A12TH_C30)     0.32     0.32     0.32 r
+  uu_fft512_hi_lo_gen_serial_2__uu_fft_serial_hi_lo_uu_bf8_serial_uu_bf2_fifoi_nsamples_count[1] (net)    16     0.00     0.32 r
+  U32375/Y (BUFH_X1M_A12TH_C34)                           0.16      0.23 *     0.56 r
+  n398096 (net)                                 9                   0.00       0.56 r
+  U13746/Y (INV_X0P5B_A12TH_C30)                          0.20      0.18 *     0.74 f
+  n398097 (net)                                11                   0.00       0.74 f
+  U274937/Y (NOR2_X1A_A12TH_C30)                          0.33      0.30 *     1.04 r
+  n383569 (net)                                22                   0.00       1.04 r
+  U189840/Y (INV_X0P5M_A12TH_C38)                         0.09      0.15 *     1.19 f
+  n403666 (net)                                 1                   0.00       1.19 f
+  U280742/Y (OAI2XB1_X0P7M_A12TH_C34)                     0.08      0.08 *     1.28 r
+  uu_fft512_hi_lo_gen_serial_2__uu_fft_serial_hi_lo_uu_bf8_serial_fifoi_valid (net)     2     0.00     1.28 r
+  U162599/Y (AND2_X0P5B_A12TH_C38)                        0.05      0.12 *     1.40 r
+  n409666 (net)                                 1                   0.00       1.40 r
+  uu_fft512_hi_lo_gen_serial_2__uu_fft_serial_hi_lo_clk_gate_uu_bf8_serial_bf2_data_reg_0__0_/EN (fe_SNPS_CLOCK_GATE_HIGH_bf8_serial_9_2_9_5_00000000_00000001_00000001_00000002_00000001_0_61)     0.00     1.40 r
+  uu_fft512_hi_lo_gen_serial_2__uu_fft_serial_hi_lo_clk_gate_uu_bf8_serial_bf2_data_reg_0__0_/EN (net)     0.00     1.40 r
+  uu_fft512_hi_lo_gen_serial_2__uu_fft_serial_hi_lo_clk_gate_uu_bf8_serial_bf2_data_reg_0__0_/latch/E (PREICG_X0P5B_A12TH_C38)     0.05     0.00 *     1.40 r so 
+  data arrival time                                                            1.40
+
+  clock clk (rise edge)                                             2.00       2.00
+  clock network delay (ideal)                                       0.00       2.00
+  clock uncertainty                                                -0.15       1.85
+  uu_fft512_hi_lo_gen_serial_2__uu_fft_serial_hi_lo_clk_gate_uu_bf8_serial_bf2_data_reg_0__0_/latch/CK (PREICG_X0P5B_A12TH_C38)     0.00     1.85 r
+  clock gating setup time                                          -0.11       1.74
+  data required time                                                           1.74
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           1.74
+  data arrival time                                                           -1.40
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.35
+
+
+1
